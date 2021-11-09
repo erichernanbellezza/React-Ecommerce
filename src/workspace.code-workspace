@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\PaginaWebJP"
+		},
+		{
+			"path": "..\\..\\..\\..\\Practica con arrays"
+		},
+		{
+			"path": "..\\..\\..\\maqueta proyecto JS coder"
+		},
+		{
+			"path": "..\\..\\..\\ecommerce-product-page-main"
+		},
+		{
+			"path": "..\\.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "maqueta proyecto JS coder"
+	}
+}
