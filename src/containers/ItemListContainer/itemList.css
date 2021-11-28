@@ -1,0 +1,29 @@
+.producto {
+	height: 10%;
+	width: 10%;
+	padding: 2em;
+	text-align: center;
+	margin-top: 6em;
+	margin-left: 5em;
+	border: 2px solid #000;
+	border-radius: 20px;
+}
+
+.productoPrecio {
+	font-size: 1.2rem;
+	margin: 0.2em 0em 1em 0em;
+}
+
+.producto img {
+	height: 8em;
+	width: 8em;
+}
+
+.comprar {
+	border: none;
+	padding: 0.5em;
+}
+
+.comprar:hover {
+	background: rgb(206, 206, 206);
+}
