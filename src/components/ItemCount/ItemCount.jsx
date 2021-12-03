@@ -1,10 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
-import "./ItemCount.css"
+import BtnAddCart from '../BtnAddCart/BtnAddCart'
+import "./ItemCount.scss"
 
-const ItemCount = ({stock, count}) => {
+const ItemCount = ({stock}) => {
 
-    const [contador, setContador] = useState(count)
+    const [contador, setContador] = useState(0)
 
     const aumentar = () => {
         setContador(contador + 1)
@@ -14,16 +15,30 @@ const ItemCount = ({stock, count}) => {
         setContador(contador - 1)
     }
 
+    const addCart = () => {
+        alert('Se ha agregado el producto al carrito.')
+    }
+
     return (
-        <div className="divBtn" m-2>
-            <button onClick={aumentar}
+        <>
+        <div className="divBtn mt-5 d-flex">
+            <button className="btnStock" onClick={aumentar}
             disabled={contador === stock}
-            >+</button>
+            >
+                +
+            </button>
             <p>{contador}</p>
-            <button onClick={disminuir}
-            disabled={contador === 1}
-            >-</button>
+            <button className="btnStock" onClick={disminuir}
+            disabled={contador === 0}
+            >
+                -
+            </button>
+            <p>{contador === stock ? "Stock agotado." : `Stock máximo disponible: ${stock}`}</p>
         </div>
+            <BtnAddCart onAdd={addCart}>
+                Agregar al carrito
+            </BtnAddCart>
+        </>
     )
 }
 

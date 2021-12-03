@@ -1,6 +1,6 @@
 import React from 'react';
-import compra from "../../assets/compra.png";
-import "./CartWidget.css"
+import compra from '../../assets/images/iconos/compra.png';
+import "./CartWidget.scss"
 
 export const CartWidget = () => {
 

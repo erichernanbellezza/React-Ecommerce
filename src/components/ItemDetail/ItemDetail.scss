@@ -1,0 +1,49 @@
+.detail {
+	text-align: center;
+	.imgDetail {
+		img {
+			width: 50%;
+			height: 75%;
+			object-fit: contain;
+		}
+	}
+
+	.prodDetail {
+		.priceDetail {
+			font-size: 1.5em;
+			font-weight: 600;
+		}
+
+		.discountDetail {
+			text-transform: uppercase;
+			font-size: 1.2em;
+			font-weight: 600;
+			color: #1a1414;
+		}
+
+		.sizeDetail {
+			display: flex;
+			justify-content: space-evenly;
+			list-style: none;
+			padding-left: 0;
+
+			li {
+				border: 1px solid rgb(68, 68, 68);
+				background-color: rgb(255, 255, 255);
+				padding: 0.5em 2em;
+				cursor: pointer;
+				&:hover {
+					background-color: #000;
+					color: #fff;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+.infoExtra {
+	margin-top: 10em;
+	margin-left: 38%;
+	width: fit-content;
+}
